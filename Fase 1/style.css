@@ -1,12 +1,29 @@
 *{
     font-family: 'Comfortaa', cursive;
 }
+h2{
+    font-size: 50px;
+}
 body{
     text-align: center;
-    color: gray;
-    background-color:black;
+    color: #FFEEDB;
+    background-color: #4C3B4D;
   }
-  input{
-    background-color: lightgray;
-    color: white;
-  }
+input{
+    background-color: #FFEEDB;
+    color: #4C3B4D;
+    border-radius: 5px;
+    border-color: #FFEEDB;
+    font-size: 20px;
+}
+button{
+    background-color: #A53860;
+    color: #FFEEDB;
+    border-radius: 5px;
+    border-color: #FFEEDB;
+    font-size: 20px;
+}
+p{
+    font-size: 25px;
+    color: #61C9A8;
+}
