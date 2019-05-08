@@ -1,0 +1,12 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+body{
+    text-align: center;
+    color: gray;
+    background-color:black;
+  }
+  input{
+    background-color: lightgray;
+    color: white;
+  }
