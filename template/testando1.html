@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="body1.css">
+        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <h1>
+            Amostra da primeira fase textotextotextotextotextotextotextotextotexto
+            textotextotextotextotextotextotextotextotextotextotexto
+            textotextotextotextotextotextotextotextotextotextotexto
+        </h1>
+        <div style="text-align: center">
+            <p>
+                Resposta:
+                <input type="text" class="campo" >
+                <button class="button">ENVIAR</button>
+            </p>
+        </div>
+        <a href="tabela.html" style="text-align: center">Tabela Periodica</a>
+        <script>
+            const texto = document.querySelector('h1');
+            function maquinaEscrever(elemento){//conseguir o efeito de maquina de escrever.
+                const textoArray = elemento.innerHTML.split('');
+                elemento.innerHTML = '';//para nao repetir a frase.
+                textoArray.forEach((letra,i)=> {
+                    setTimeout(function(){
+                        elemento.innerHTML +=letra;
+                    },75*i);
+                });
+            }
+            maquinaEscrever(texto);
+        </script>
+
+    </body>
+</html>
