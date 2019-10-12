@@ -1,0 +1,48 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom right, #38504e,#1f2e2d)
+}
+#container{
+    top: 100px;
+    box-shadow: 0 0 20px black;
+    width: 900px;
+    height: 600px;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: radial-gradient(#b1f9f3, #89c1bc)
+}
+h1{
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+.information{
+    padding: 80px;
+    font-size: 20px;
+    text-shadow: 0 0 1px black;
+}
+
+.taskcontainer{
+    height: 130px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(237, 244, 245);
+    background: linear-gradient(to top, #171818,#202022);
+}
+
+.charPic{
+    width:250px;
+    height: 250px;
+    position: absolute;
+    perspective: 1000px;
+    right: 50px;
+    top: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    background: linear-gradient(to top, #171818,#202022);
+}
