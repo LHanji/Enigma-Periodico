@@ -69,47 +69,4 @@ function startFase(){
         return randomElements;
     }
 }
-
-/* function verify(){
-    var answer = getDocumentById("answer")
-    var number = getDocumentById("faseNum")
-    if(rightAnswers(number, answer) == true){
-        console.log("Certo")
-    } else {
-        console.log("errado")
-    }
-}
-function rightAnswers(){
-    answer.toLowerCase()
-    if(number == 0){
-        if( answer == "sódio" || answer == "sodio"){
-            return true
-        }
-        return false
-    }
-    
-    if(number == 1){
-        if( answer == "kriptônio" || answer == "kriptonio"){
-            return true
-        }
-        return false
-    }
-    if(number == 2){
-        if( answer == "fósforo" || answer == "fosforo"){
-            return true
-        }
-        return false
-    }
-    if(number == 3){
-        if( answer == "einstênio" || answer == "einstenio"){
-            return true
-        }
-        return false
-    }
-    if(number == 4){
-        if( answer == "mendeleev"){
-            return true
-        }
-        return false
-    } */
-/*}*/
+startFase();

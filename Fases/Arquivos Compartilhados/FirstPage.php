@@ -26,7 +26,7 @@
             break;
 
             case 4:
-                    header('Location: ../Lohana/aaa.php');
+                    header('Location: ../Lohana/paget.php');
             break;
 
             case 5:

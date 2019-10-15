@@ -1,22 +1,24 @@
 html{
     background-color: black;
-    border: solid 50px;
+    border: solid 30px;
     border-color: dimgray;
     height: 591px; 
     width: 1198px;
-    border-radius: 50px 
+    border-radius: 15px;
+    margin: 50px;
+    margin-top: 20px ;
 
 }
 .button{
     background-color: darkgreen;
     border: solid 10px darkgreen;
-    border-radius: 30px;
+    border-radius: 10px;
     color: black;
     font-weight: bolder;
 }
 .campo{
     border: solid 5px darkgreen;
-    border-radius: 50px;
+    border-radius: 10px;
     width: 500px;
     height: 40px;
 }
@@ -34,3 +36,20 @@ img{
     margin: auto;
     text-align: center;
 }
+.tabela{
+    position: absolute;
+    top: 55px;
+    left: 85px;
+    width: 1185px; 
+    height: 580px;
+  }
+  .tablebutton{
+    position: absolute;
+    top: 590px;
+    right: 1120px;
+    background-color: darkgreen;
+    border: solid 10px darkgreen;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+  }
