@@ -9,6 +9,6 @@
         echo '<script type="text/javascript" src="main.js"></script>';
     }
 
-    $elemento = '" "';
+    $elemento = '"a"';
 
-    include "include  '../Arquivos Compartilhados/template.php';";
+    include "../Arquivos Compartilhados/template.php";

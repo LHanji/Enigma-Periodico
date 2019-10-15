@@ -6,7 +6,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
     </head>
     <body>
-        <?php titulo();//Insira o que irá aparecer ao começar a fase ?>
+        <?php titulo();         //Insira o que irá aparecer ao começar a fase ?>
         <div style="text-align: center">
             <form method="POST" action="../Arquivos Compartilhados/resposta.php">
                 Resposta:
@@ -17,11 +17,15 @@
         </div>
         <a href="../Arquivos Compartilhados/tabela.html" style="text-align: center">Tabela Periodica</a>
         <script>
+
+
             //Insira o texto que você queira que seja digitado na tela 
+
+
             var texto = document.querySelector(<?=$elemento?>);
-            function maquinaEscrever(elemento){//conseguir o efeito de maquina de escrever.
+            function maquinaEscrever(elemento){         //conseguir o efeito de maquina de escrever.
                 var textoArray = elemento.innerHTML.split('');
-                elemento.innerHTML = '';//para nao repetir a frase.
+                elemento.innerHTML = '';            //para nao repetir a frase.
                 textoArray.forEach((letra,i)=> {
                     setTimeout(function(){
                         elemento.innerHTML +=letra;
@@ -30,6 +34,6 @@
             }
             maquinaEscrever(texto);
         </script>
-        <?php logica_fase(); //Insira o javascript?>
+        <?php logica_fase();                 //Insira o javascript?>
     </body>
 </html>
