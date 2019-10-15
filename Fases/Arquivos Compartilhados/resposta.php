@@ -21,7 +21,7 @@ switch ($ult_enig) {
             $_SESSION['array_enig'] = $array_enig;
             nextChallenge();
         } else {
-            header('Location: faseYasmin.php');
+            header('Location: ../Yasmin/faseYasmin.php');
         }
         break;
 
