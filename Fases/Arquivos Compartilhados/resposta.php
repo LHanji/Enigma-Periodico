@@ -34,6 +34,13 @@ switch ($ult_enig) {
         //Insiram aqui, a verificação de vocês, lembrem-se de alternarem a vossa chave para true
         //Certifiquem-se de possuir as mesmas 3 linhas que o meu(com excessão da 1a, modifiquem ela)
     case "Arlene":
+        if ($resp == "cloro") {
+            $array_enig["Arlene"] = true;
+            $_SESSION['array_enig'] = $array_enig;
+            nextChallenge();
+        } else {
+            header('Location: ../Arlene/principal1.php');
+        }
         break;
     case "Lohana":
         if ($resp == "fosforo") {
