@@ -22,7 +22,7 @@
             break;
             
             case 3:
-                    header('Location: ../Arlene/aaa.php');
+                    header('Location: ../Arlene/principal1.php');
             break;
 
             case 4:
