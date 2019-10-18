@@ -63,6 +63,7 @@ function nextChallenge()
             if ($array_enig["Yasmin"] == false)
                 header('Location: ../Yasmin/faseYasmin.php');
             else
+                end();
                 nextChallenge();
             break;
 
@@ -70,13 +71,15 @@ function nextChallenge()
             if ($array_enig["Shaiene"] == false)
                 header('Location: ../Shaiene/RS.php');
             else
+                end();
                 nextChallenge();
             break;
 
         case 3:
             if ($array_enig["Arlene"] == false)
-                header('Location: ../Arlene/aaa.php');
+                header('Location: ../Arlene/principal1.php');
             else
+                end();
                 nextChallenge();
             break;
 
@@ -84,6 +87,7 @@ function nextChallenge()
             if ($array_enig["Lohana"] == false)
                 header('Location: ../Lohana/paget.php');
             else
+                end();
                 nextChallenge();
             break;
 
@@ -91,7 +95,15 @@ function nextChallenge()
             if ($array_enig["Gean"] == false)
                 header('Location: ../Gean/aaa.php');
             else
+                end();
                 nextChallenge();
             break;
     }
+    function end(){
+        if($array_enig["Gean"] == true && $array_enig["Lohana"] == true && $array_enig["Arlene"] == true && $array_enig["Shaiene"] == true && $array_enig["Yasmin"] == true){
+            header('Location: end.php');
+        }
+    }
+
 }
+

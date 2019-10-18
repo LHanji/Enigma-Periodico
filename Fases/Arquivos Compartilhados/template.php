@@ -32,7 +32,7 @@
         </form>
     </div>
     <input class="tablebutton" type="button" value="Abrir a Tabela" onclick="showImage();" id="showButton" />
-    <img class="tabela" id="loadingImage" src="../Arquivos Compartilhados/tabela-periodica.png" style="visibility:hidden;" />
+    <img class="tabela" id="loadingImage" src=<?= $tabela ?> style="visibility:hidden;" />
     <input class="tablebutton" type="button" value="Fechar a Tabela" onclick="hideImage();" style="visibility: hidden" id="hideButton" />
 
     <body>
