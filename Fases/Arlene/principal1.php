@@ -10,5 +10,6 @@
     {
         echo '<script src="arq.js"></script>';
     }
+    $tabela = "'../Arquivos Compartilhados/tabela2.jpeg'";
     //$elemento = "Foi Cláudio o Bravo quem invadiu Atenas.";
 ?>
