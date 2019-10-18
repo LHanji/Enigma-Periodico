@@ -16,4 +16,5 @@
         echo '<script type="text/javascript" src="RS.js"></script>';
     }
     $n = '"h2"';
+    $tabela = "'../Arquivos Compartilhados/tabela1.jpg'";
 ?>
