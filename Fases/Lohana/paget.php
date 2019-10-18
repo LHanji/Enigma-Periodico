@@ -10,5 +10,6 @@
         echo '<script src="script.js"></script>';
     }
     $elemento = '"a"';
+    $tabela = "'../Arquivos Compartilhados/tabela1.jpg'";
 
     include  '../Arquivos Compartilhados/template.php';
