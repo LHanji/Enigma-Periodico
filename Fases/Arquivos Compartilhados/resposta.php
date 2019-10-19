@@ -43,14 +43,11 @@ switch ($ult_enig) {
         }
         break;
     case "Lohana":
-        if ($resp == "fosforo") {
-            $array_enig["Lohana"] = true;
-            $_SESSION['array_enig'] = $array_enig;
-            nextChallenge();
-        } else {
-            header('Location: ../Lohana/paget.php');
-        }
+        $array_enig["Lohana"] = true;
+        $_SESSION['array_enig'] = $array_enig;
+        nextChallenge();
         break;
+        
     case "Gean":
         break;
 }
@@ -64,7 +61,7 @@ function nextChallenge()
                 header('Location: ../Yasmin/faseYasmin.php');
             else
                 end();
-                nextChallenge();
+            nextChallenge();
             break;
 
         case 2:
@@ -72,7 +69,7 @@ function nextChallenge()
                 header('Location: ../Shaiene/RS.php');
             else
                 end();
-                nextChallenge();
+            nextChallenge();
             break;
 
         case 3:
@@ -80,7 +77,7 @@ function nextChallenge()
                 header('Location: ../Arlene/principal1.php');
             else
                 end();
-                nextChallenge();
+            nextChallenge();
             break;
 
         case 4:
@@ -88,7 +85,7 @@ function nextChallenge()
                 header('Location: ../Lohana/paget.php');
             else
                 end();
-                nextChallenge();
+            nextChallenge();
             break;
 
         case 5:
@@ -96,14 +93,13 @@ function nextChallenge()
                 header('Location: ../Gean/aaa.php');
             else
                 end();
-                nextChallenge();
+            nextChallenge();
             break;
     }
-    function end(){
-        if($array_enig["Gean"] == true && $array_enig["Lohana"] == true && $array_enig["Arlene"] == true && $array_enig["Shaiene"] == true && $array_enig["Yasmin"] == true){
+    function end()
+    {
+        if ($array_enig["Gean"] == true && $array_enig["Lohana"] == true && $array_enig["Arlene"] == true && $array_enig["Shaiene"] == true && $array_enig["Yasmin"] == true) {
             header('Location: end.php');
         }
     }
-
 }
-
