@@ -47,9 +47,17 @@ switch ($ult_enig) {
         $_SESSION['array_enig'] = $array_enig;
         nextChallenge();
         break;
-        
+
     case "Gean":
-        break;
+      $resp = strtolower($resp);
+      if (($resp == "tecnecio")||($resp == "tecnécio")||($resp == "tc")){
+          $array_enig["Gean"] = true;
+          $_SESSION['array_enig'] = $array_enig;
+          nextChallenge();
+      } else {
+          header('Location: ../Gean/index.php');
+      }
+      break;
 }
 
 function nextChallenge()
@@ -90,7 +98,7 @@ function nextChallenge()
 
         case 5:
             if ($array_enig["Gean"] == false)
-                header('Location: ../Gean/aaa.php');
+                header('Location: ../Gean/index.php');
             else
                 end();
             nextChallenge();
