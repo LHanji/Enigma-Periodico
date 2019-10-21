@@ -8,7 +8,7 @@
 </head> 
     <body>
         <div style="text-align: center">
-            <h1> PERIÓDICOS </h1>
+            <h1> 3N1GM4 </h1>
              <p>Você é um estágiario no laborátorio de química nº 3.n1gma. Tudo ia bem, quando, acidentalmente,
                 você aciona os alarmes do laborátorio se trancando lá dentro. Agora, terá que resolver uma série
                 de enigmas nas portas para poder escapar. Está dentro? </p>
