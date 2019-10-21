@@ -17,5 +17,6 @@
         echo '<script src="RS.js"></script>';
     }
     $elemento = '"h1"';
+    $tabela = "'../Arquivos Compartilhados/tabela1.jpg'";
 
     include  '../Arquivos Compartilhados/template.php';
