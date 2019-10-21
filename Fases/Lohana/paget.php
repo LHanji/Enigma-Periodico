@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $array_enig = $_SESSION['array_enig'];
     $ult_enig = "Lohana";
     function titulo(){
         echo '
