@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $array_enig = $_SESSION['array_enig'];
     $ult_enig = "Arlene";
     include  '../Arquivos Compartilhados/template.php';
     function titulo()
