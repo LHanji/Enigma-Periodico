@@ -30,7 +30,7 @@
             break;
 
             case 5:
-                    header('Location: ../Gean/aaa.php');
+                    header('Location: ../Gean/index.php');
             break;
         }
             
