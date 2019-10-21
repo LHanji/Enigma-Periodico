@@ -8,7 +8,8 @@ $array_enig = $_SESSION['array_enig']; //Essa var possui quais os desafios foram
 
 //FIM DO JOGO
 if (($array_enig["Yasmin"] == true) and ($array_enig["Shaiene"] == true) and ($array_enig["Arlene"] == true) and ($array_enig["Lohana"] == true) and ($array_enig["Gean"] == true)) {
-    header('Location: endPage.html');
+    header('Location: end.php');
+    die();
 }
 
 
@@ -68,46 +69,35 @@ function nextChallenge($array_enig)
             if ($array_enig["Yasmin"] == false)
                 header('Location: ../Yasmin/faseYasmin.php');
             else
-                end($array_enig);
-            nextChallenge();
+                nextChallenge();
             break;
 
         case 2:
             if ($array_enig["Shaiene"] == false)
                 header('Location: ../Shaiene/RS.php');
             else
-                end($array_enig);
-            nextChallenge();
+                nextChallenge();
             break;
 
         case 3:
             if ($array_enig["Arlene"] == false)
                 header('Location: ../Arlene/principal1.php');
             else
-                end($array_enig);
-            nextChallenge();
+                nextChallenge();
             break;
 
         case 4:
             if ($array_enig["Lohana"] == false)
                 header('Location: ../Lohana/paget.php');
             else
-                end();
-            nextChallenge();
+                nextChallenge();
             break;
 
         case 5:
             if ($array_enig["Gean"] == false)
                 header('Location: ../Gean/index.php');
             else
-                end($array_enig);
-            nextChallenge();
+                nextChallenge();
             break;
-    }
-    function end($array_enig)
-    {
-        if ($array_enig["Gean"] == true && $array_enig["Lohana"] == true && $array_enig["Arlene"] == true && $array_enig["Shaiene"] == true && $array_enig["Yasmin"] == true) {
-            header('Location: end.php');
-        }
     }
 }
