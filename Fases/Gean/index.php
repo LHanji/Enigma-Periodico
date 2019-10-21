@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $array_enig = $_SESSION['array_enig'];
     echo '<head><title>Falta um aí</title></head>';
     $ult_enig = "Gean";
     function titulo(){
