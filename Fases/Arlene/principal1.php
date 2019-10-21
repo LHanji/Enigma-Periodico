@@ -2,7 +2,6 @@
     session_start();
     $array_enig = $_SESSION['array_enig'];
     $ult_enig = "Arlene";
-    include  '../Arquivos Compartilhados/template.php';
     function titulo()
     {
         echo '<div id="kaka" margin: auto; style="text-align: center;"></div>';   
@@ -12,6 +11,8 @@
     {
         echo '<script src="arq.js"></script>';
     }
-    $tabela = "'../Arquivos Compartilhados/tabela2.jpeg'";
+    $tabela = '"../Arquivos Compartilhados/tabela2.jpeg"';
     //$elemento = "Foi Cláudio o Bravo quem invadiu Atenas.";
+    include  '../Arquivos Compartilhados/template.php';
 ?>
+
