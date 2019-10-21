@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $ult_enig = "Arlene";
     include  '../Arquivos Compartilhados/template.php';
     function titulo()
