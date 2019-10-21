@@ -22,8 +22,6 @@ function startFase() {
     var elements = []
     /* Pick random number to be the current fase */
     var number = Math.floor(Math.random() * 5)
-    console.log(number)
-
     /* get number */
     /* document.getElementById("faseNum").value = number */
 
@@ -66,11 +64,7 @@ function startFase() {
         }
         resp = "einstenio"
     }
-
-    console.log(resp)
-
     elements = randomSort(elements)
-    console.log(elements)
 
     showFase(elements)
 
@@ -117,7 +111,6 @@ function startFase() {
 function resposta() {
     caixaTexto = document.getElementById("resposta").value
     caixaTexto = caixaTexto.toLowerCase()
-    console.log(caixaTexto)
     if(caixaTexto == resp)
     {
         document.getElementById("resposta").hidden = true

@@ -8,8 +8,7 @@ $array_enig = $_SESSION['array_enig']; //Essa var possui quais os desafios foram
 
 //FIM DO JOGO
 if (($array_enig["Yasmin"] == true) and ($array_enig["Shaiene"] == true) and ($array_enig["Arlene"] == true) and ($array_enig["Lohana"] == true) and ($array_enig["Gean"] == true)) {
-    header('Location: end.php');
-    die();
+    header('Location: endPage.html');
 }
 
 
@@ -20,7 +19,7 @@ switch ($ult_enig) {
         if ($resp == "carbono") {
             $array_enig["Yasmin"] = true;
             $_SESSION['array_enig'] = $array_enig;
-            nextChallenge($array_enig);
+            nextChallenge();
         } else {
             header('Location: ../Yasmin/faseYasmin.php');
         }
@@ -29,7 +28,7 @@ switch ($ult_enig) {
     case "Shaiene":
         $array_enig["Shaiene"] = true;
         $_SESSION['array_enig'] = $array_enig;
-        nextChallenge($array_enig);
+        nextChallenge();
         break;
 
         //Insiram aqui, a verificação de vocês, lembrem-se de alternarem a vossa chave para true
@@ -38,7 +37,7 @@ switch ($ult_enig) {
         if ($resp == "cloro") {
             $array_enig["Arlene"] = true;
             $_SESSION['array_enig'] = $array_enig;
-            nextChallenge($array_enig);
+            nextChallenge();
         } else {
             header('Location: ../Arlene/principal1.php');
         }
@@ -46,7 +45,7 @@ switch ($ult_enig) {
     case "Lohana":
         $array_enig["Lohana"] = true;
         $_SESSION['array_enig'] = $array_enig;
-        nextChallenge($array_enig);
+        nextChallenge();
         break;
 
     case "Gean":
@@ -54,14 +53,14 @@ switch ($ult_enig) {
       if (($resp == "tecnecio")||($resp == "tecnécio")||($resp == "tc")){
           $array_enig["Gean"] = true;
           $_SESSION['array_enig'] = $array_enig;
-          nextChallenge($array_enig);
+          nextChallenge();
       } else {
           header('Location: ../Gean/index.php');
       }
       break;
 }
 
-function nextChallenge($array_enig)
+function nextChallenge()
 { //Essa função recursiva seleciona a próxima fase, mudem no seu trecho o nome do seu arquivo
     $rand = mt_rand(1, 5);
     switch ($rand) {
@@ -69,35 +68,46 @@ function nextChallenge($array_enig)
             if ($array_enig["Yasmin"] == false)
                 header('Location: ../Yasmin/faseYasmin.php');
             else
-                nextChallenge();
+                end();
+            nextChallenge();
             break;
 
         case 2:
             if ($array_enig["Shaiene"] == false)
                 header('Location: ../Shaiene/RS.php');
             else
-                nextChallenge();
+                end();
+            nextChallenge();
             break;
 
         case 3:
             if ($array_enig["Arlene"] == false)
                 header('Location: ../Arlene/principal1.php');
             else
-                nextChallenge();
+                end();
+            nextChallenge();
             break;
 
         case 4:
             if ($array_enig["Lohana"] == false)
                 header('Location: ../Lohana/paget.php');
             else
-                nextChallenge();
+                end();
+            nextChallenge();
             break;
 
         case 5:
             if ($array_enig["Gean"] == false)
                 header('Location: ../Gean/index.php');
             else
-                nextChallenge();
+                end();
+            nextChallenge();
             break;
+    }
+    function end()
+    {
+        if ($array_enig["Gean"] == true && $array_enig["Lohana"] == true && $array_enig["Arlene"] == true && $array_enig["Shaiene"] == true && $array_enig["Yasmin"] == true) {
+            header('Location: end.php');
+        }
     }
 }
