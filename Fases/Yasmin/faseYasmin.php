@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $ult_enig = "'Yasmin'";
 
     function titulo(){
