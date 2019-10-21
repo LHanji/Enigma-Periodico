@@ -2,6 +2,7 @@
     session_start();
     //titulo(), logica_fase()
     $ult_enig = "Shaiene";
+ $array_enig = $_SESSION['array_enig'];
     function titulo(){
         echo ' <div style="text-align:center" id="main">
                     <div id="dificuldade">
