@@ -1,6 +1,7 @@
 <?php
     session_start();
     $ult_enig = "'Yasmin'";
+    $array_enig = $_SESSION['array_enig'];
 
     function titulo(){
         echo '<div id="Enigma1"></div>';
