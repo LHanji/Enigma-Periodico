@@ -34,10 +34,6 @@
             break;
         }
             
-    }
-
-
-
-    //Façam a 1a pagina aqui
-    
+    }    
     ?>
+   
