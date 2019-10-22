@@ -34,7 +34,7 @@ switch ($ult_enig) {
         //Insiram aqui, a verificação de vocês, lembrem-se de alternarem a vossa chave para true
         //Certifiquem-se de possuir as mesmas 3 linhas que o meu(com excessão da 1a, modifiquem ela)
     case "Arlene":
-        if ($resp == "cloro") {
+        if (($resp == "cloro") || ($resp == "cl")) {
             $array_enig["Arlene"] = true;
             $_SESSION['array_enig'] = $array_enig;
             nextChallenge($array_enig);
