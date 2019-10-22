@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../Arquivos Compartilhados/body1.css">
+    <link rel="stylesheet" type="text/css" href="../Arquivos Compartilhados/terminal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
         function showImage() {
@@ -31,9 +32,11 @@
             <input type="submit" class="button" value="ENVIA" id="envia">
         </form>
     </div>
-    <input class="tablebutton" type="button" value="Abrir a Tabela" onclick="showImage();" id="showButton" />
-    <img class="tabela" id="loadingImage" src=<?php echo $tabela ?> style="visibility:hidden;" />
-    <input class="tablebutton" type="button" value="Fechar a Tabela" onclick="hideImage();" style="visibility: hidden" id="hideButton" />
+    <div style="text-align: center">
+        <input class="tablebutton" type="button" value="Abrir a Tabela" onclick="showImage();" id="showButton" />
+        <img class="tabela" id="loadingImage" src=<?php echo $tabela ?> style="visibility:hidden;" />
+        <input class="tablebutton" type="button" value="Fechar a Tabela" onclick="hideImage();" style="visibility: hidden" id="hideButton" />
+    </div>
 
     <body>
         <script>
