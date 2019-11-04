@@ -3,4 +3,9 @@ Jogo de enigma para contribuição da comemoração dos 150 anos da tabela peri�
 
 Terminado.
 
-Feito por Arlene Pelenda(@Julenne), Gean de Magalhães(@GE28), Lohana Torres(@LHanji), Rafael Shaiene(@Shaiene-kun) e Yasmin Líbano(@yasmin-liban).
+Feito por 
+Arlene Pelenda(@Julenne), 
+Gean de Magalhães(@GE28), 
+Lohana Torres(@LHanji), 
+Rafael Shaiene(@Shaiene-kun), 
+Yasmin Líbano(@yasmin-liban).
