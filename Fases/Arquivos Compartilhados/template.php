@@ -27,7 +27,7 @@
         <form method="POST" action="../Arquivos Compartilhados/resposta.php">
             Resposta:
             <input type="hidden" value=<?= $ult_enig ?> name="ult_enig"><!-- //Crie no seu .php uma var chamada $ult-enig que possua como valor o seu nome -->
-            <input type="text" class="campo" name="resp" id="cxtxt">
+            <input type="text" class="campo" name="resp" id="cxtxt" autocomplete="off">
             <input type="submit" class="button" value="ENVIA" id="envia">
         </form>
     </div>

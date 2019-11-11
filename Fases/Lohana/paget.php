@@ -18,6 +18,6 @@
         echo '<script src="script.js"></script>';
     }
     $elemento = '"a"';
-    $tabela = "'../Arquivos Compartilhados/tabela1.jpg'";
+    $tabela = '"../Arquivos Compartilhados/tabela2.jpeg"';
 
     include  '../Arquivos Compartilhados/template.php';

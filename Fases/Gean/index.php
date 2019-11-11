@@ -18,8 +18,8 @@
     function logica_fase(){
         echo '<script src="script.js"></script>';
     }
-    $elemento = '"something"';
-    $tabela = "'../Arquivos Compartilhados/tabela1.jpg'";
+    $elemento = "something";
+    $tabela = "tabel.png";
 
     include  '../Arquivos Compartilhados/template.php';
 ?>

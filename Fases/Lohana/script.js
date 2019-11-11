@@ -10,8 +10,8 @@ var react
 
 react = document.createElement("h2")
 react.setAttribute("id","erro")
-react.setAttribute("style","color: darkgreen")
-react.innerHTML = "Droga! Você acertou."
+react.setAttribute("style","color: rgba(223, 82, 82, 0.856)")
+react.innerHTML = "Droga! Você acertou -_-"
 
 startFase();
 
@@ -21,7 +21,7 @@ function startFase() {
 
     var elements = []
     /* Pick random number to be the current fase */
-    var number = Math.floor(Math.random() * 5)
+    var number = Math.floor(Math.random() * 3)
     /* get number */
     /* document.getElementById("faseNum").value = number */
 
@@ -47,7 +47,7 @@ function startFase() {
             elements.push(element)
         }
         resp = "kriptonio"
-    } else if (number == 2) {
+    } else if (number == 3) {
         for (i = 0; i < 5; i++) {
             var element = {
                 src: "elements/" + number + "/" + i + ".png",
@@ -55,7 +55,7 @@ function startFase() {
             elements.push(element)
         }
         resp = "fosforo"
-    } else if (number == 3) {
+    } else if (number == 2) {
         for (i = 0; i < 4; i++) {
             var element = {
                 src: "elements/" + number + "/" + i + ".png",
@@ -133,8 +133,8 @@ function resposta() {
     {        
         mensagemErro = document.createElement("h2")
         mensagemErro.setAttribute("id","erro")
-        mensagemErro.setAttribute("style","color: darkgreen")
-        mensagemErro.innerHTML = "Hah! Você errou."
+        mensagemErro.setAttribute("style","color: rgba(223, 82, 82, 0.856)")
+        mensagemErro.innerHTML = "Hah! Você errou xD"
         document.getElementById("inputResp").appendChild(mensagemErro)
         troca = true
     }
