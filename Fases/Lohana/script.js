@@ -10,8 +10,8 @@ var react
 
 react = document.createElement("h2")
 react.setAttribute("id","erro")
-react.setAttribute("style","color: rgba(223, 82, 82, 0.856)")
-react.innerHTML = "Droga! Você acertou -_-"
+react.setAttribute("style","color: darkgreen")
+react.innerHTML = "Droga! Você acertou."
 
 startFase();
 
@@ -133,8 +133,8 @@ function resposta() {
     {        
         mensagemErro = document.createElement("h2")
         mensagemErro.setAttribute("id","erro")
-        mensagemErro.setAttribute("style","color: rgba(223, 82, 82, 0.856)")
-        mensagemErro.innerHTML = "Hah! Você errou xD"
+        mensagemErro.setAttribute("style","color: darkgreen")
+        mensagemErro.innerHTML = "Hah! Você errou."
         document.getElementById("inputResp").appendChild(mensagemErro)
         troca = true
     }
